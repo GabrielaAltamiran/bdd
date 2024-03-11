@@ -42,8 +42,3 @@ select nombre,cedula, * from estudiantes
 select nombre, * from estudiantes where cedula like '17%'
 --Crear un select que traiga los nombres completos de todos los estudaintes cuyo nombre empiece con A
 select nombre, * from estudiantes where nombre like 'A%'
--------------------------------------Reto 6---------------------------
-delete from estudiantes
-where cedula = '%05'
-
-select * from estudiantes

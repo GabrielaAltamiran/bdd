@@ -47,11 +47,6 @@ select numero_cuenta,cedula_propetario, * from cuentas
 --#2 Crear un select que traiga los registros entre el dia de hoy hasta 2 meses antes
 select * from cuentas where fecha_creacion between '10/01/2024' and '10/03/2024'
 select  numero_cuenta,saldo, * from cuentas  where  fecha_creacion between '1/1/2024' and '1/3/2024'
------------------------RETO 6-----------------------
-delete from cuentas 
-where cedula_propetario like '10%'
-
-select * from cuentas
 
 
 

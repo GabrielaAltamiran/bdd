@@ -38,14 +38,9 @@ values(10,1743289348,'22/08/2009','15:15')
 insert into registros_entrada(codigo_registro,cedula_empleado,fecha,hora)
 values(11,1754961308,'29/07/2012','20:05')
 -----------------------------RETO 3-------------------------------------
---Seleccionar todas las cedulas de empleado y los registros de entrada
+--Seleccionar todas las cedulas de empleado y fecha y hora de los registros de entrada
 select cedula_empleado,fecha,hora, * from registros_entrada
---Selecionar los reg fecha y hora deistros de entrada que esten entre 7:00 y 14:00
+--Selecionar los registros de entrada que esten entre 7:00 y 14:00
 select hora, * from registros_entrada where  hora between '7:00' and '14:00'
 --Selecionar los registros que tengan horas superioes a 8:00
 select hora, * from registros_entrada where  hora > '8:00'
-----------------------------RETO 6-------------------------------------
-delete from registros_entrada 
-where fecha date = '1/6/2024' and '31/6/2024'
-
-select * from 

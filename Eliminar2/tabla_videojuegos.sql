@@ -38,9 +38,6 @@ values(00003,'Gisel',40)
 --#4
 insert into videojuegos(codigo,nombre,valoracion)
 values(00004,'Color match',40)
-
-insert into videojuegos(codigo,nombre,valoracion)
-values(00014,'Color match',2)
 ---------------------------RETO 3-------------------------------------------------------
 --Selecionar todos los videojuegos con un nomre que empice con "C"
 select * from videojuegos where  nombre like 'C%'
@@ -48,9 +45,4 @@ select * from videojuegos where  nombre like 'C%'
 select * from videojuegos where valoracion between '9' and '10'
 --Seleccionar videojuegos con una descripcion null
 select * from videojuegos where descripcion is null
-------------------------------Reto 6-------------------------------
-delete  from videojuegos 
-where valoracion < 7
-
-select * from videojuegos
 

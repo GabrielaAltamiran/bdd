@@ -57,9 +57,3 @@ select * from productos where nombre like 'Q%'
 select * from productos where descripcion is null
 --3.3 crear un select que traiga todos los productos con un precio entre 2 y 3
 select * from productos where precio between '2' and '3' 
-------------------------------------RETO 6---------------------------
-delete from productos 
-where descripcion is null
---Lo que se quiere borrar  nombe = '1755841002'
-
-select * from productos 
