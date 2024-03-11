@@ -35,6 +35,8 @@ values('1751794860','Gensis','Mendoza','genomendoza45@gmail.com','03/07/2004')
 --#9
 insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
 values('0351794865','Geno','Mendoza','genomendoza45@gmail.com','03/07/2004')
+insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
+values('0351732865','Lana','Del rey','lanadelrey@gmail.com','03/07/2004')
 ----------------------------------RETO 3-----------------------------
 --Crear un select que traiga el nombre y la cedula de los estudiantes
 select nombre,cedula, * from estudiantes
@@ -42,3 +44,15 @@ select nombre,cedula, * from estudiantes
 select nombre, * from estudiantes where cedula like '17%'
 --Crear un select que traiga los nombres completos de todos los estudaintes cuyo nombre empiece con A
 select nombre, * from estudiantes where nombre like 'A%'
+------------------RETO 7-------------------
+select nombre,apellido, * from estudiantes
+where nombre like 'M%' or apellido like '%Z'
+
+select nombre, * from estudiantes
+where cedula  like '%32%' and cedula like '18%'
+
+select nombre, apellido, * from estudiantes
+where cedula like '%06' or cedula like '17%'
+
+
+

@@ -32,6 +32,9 @@ values(102558,'Queso','700',205,'Un dia mas un dia menos pero ninguno no vivido 
 --#1.7
 insert into productos(codigo, nombre,precio,stock,descripcion)
 values(102568,'Quinua','700',205,'Un dia mas un dia menos pero ninguno no vivido y gosado')
+--#1.8
+insert into productos(codigo, nombre,precio,stock,descripcion)
+values(102567,'Quinua','700',205,'')
 
 ---------------------Con los campos obligatorios---------------------------
 --#2.1
@@ -49,7 +52,9 @@ values(541586,'Nelly','2',30)
 --#2.3
 insert into productos(codigo, nombre,precio,stock)
 values(543357,'Diego','3',30)
-
+--#2.4
+insert into productos(codigo, nombre,precio,stock)
+values(543358,'Diego','3',0)
 ----------------------------------RETO 3----------------------
 --3.1 Crear select que traiga los productos que empiza con Q
 select * from productos where nombre like 'Q%'
@@ -57,3 +62,18 @@ select * from productos where nombre like 'Q%'
 select * from productos where descripcion is null
 --3.3 crear un select que traiga todos los productos con un precio entre 2 y 3
 select * from productos where precio between '2' and '3' 
+------------------------------------RETO 6---------------------------
+delete from productos 
+where descripcion is null
+--Lo que se quiere borrar  nombe = '1755841002'
+
+select * from productos 
+----------------------ReTO 7---------------------------
+select * from productos 
+where stock = 10 and precio < money (10)
+
+select nombre,stock, * from productos 
+where descripcion like '%m$' or descripcion =' '
+
+select nombre, * from productos
+where descripcion is null or stock = 0 

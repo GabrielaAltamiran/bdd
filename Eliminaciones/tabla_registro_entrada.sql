@@ -44,3 +44,16 @@ select cedula_empleado,fecha,hora, * from registros_entrada
 select hora, * from registros_entrada where  hora between '7:00' and '14:00'
 --Selecionar los registros que tengan horas superioes a 8:00
 select hora, * from registros_entrada where  hora > '8:00'
+---------------------------------Reto 7-------------------------
+select * from registros_entrada
+where fecha between '1/09/2023' and '30/09/2023' or  cedula_empleado like '17%'
+
+select *  from registros_entrada
+where fecha between '1/08/2023' and '30/08/2023' or  hora between '08:00' and '12:00'
+
+select *  from registros_entrada
+where  fecha between '1/08/2023' and '30/08/2023' and cedula_empleado like '17%' and hora 
+between '08:00' and '12:00' or fecha 
+between '1/09/2023' and '30/09/2023' and cedula_empleado like '08%' and hora 
+between '09:00' and '13:00'
+
