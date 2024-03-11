@@ -40,4 +40,17 @@ values (20153,'50219',208.3,'D','15/08/2004','12:12')
 --#10
 insert into transacciones(codigo,numero_cuenta,monto,tipo,fecha,hota)
 values (20154,'50220',209.3,'D','10/08/2004','20:12')
-
+--#11
+insert into transacciones(codigo,numero_cuenta,monto,tipo,fecha,hota)
+values (201467,'50220',209.3,'D','10/09/2004','20:12')
+-----------------RETO 4---------------------------
+--Selecionar todas las transaciones realizadas con un tipo D
+select * from transacciones where tipo like 'D'
+--Seleccionar las transacciones con montos entre 200 y 2000
+select * from transacciones where monto between '200' and '2000'
+--Seleccionar el codigo, monto,tipo y g¿fecha de las transacciones que tengas una fecha difernte a null
+select codigo,monto,tipo,fecha, * from transacciones where fecha != null
+-----------------RETO 5---------------------------
+select * from transacciones
+update transacciones set monto > 100 and monto <500, fecha = '01/09/2004' and '31/09/2004',hota = '14:00' and '20:00'
+where tipo 'T'

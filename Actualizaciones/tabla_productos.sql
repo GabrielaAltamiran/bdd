@@ -49,7 +49,7 @@ values(541586,'Nelly','2',30)
 --#2.3
 insert into productos(codigo, nombre,precio,stock)
 values(543357,'Diego','3',30)
---#2.4
+
 ----------------------------------RETO 3----------------------
 --3.1 Crear select que traiga los productos que empiza con Q
 select * from productos where nombre like 'Q%'
@@ -57,11 +57,3 @@ select * from productos where nombre like 'Q%'
 select * from productos where descripcion is null
 --3.3 crear un select que traiga todos los productos con un precio entre 2 y 3
 select * from productos where precio between '2' and '3' 
----------------------------------RETO 5-----------------------
---Actualizar el STOCK a 0 en todos los productos donde la descripcion sea null
-select * from productos where descripcion is null
-
-update productos set stock = 0
-where stock is null
-
-

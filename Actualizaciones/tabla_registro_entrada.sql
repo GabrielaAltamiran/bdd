@@ -44,7 +44,3 @@ select cedula_empleado,fecha,hora, * from registros_entrada
 select hora, * from registros_entrada where  hora between '7:00' and '14:00'
 --Selecionar los registros que tengan horas superioes a 8:00
 select hora, * from registros_entrada where  hora > '8:00'
-------------------------Reto 5------------------------
-select * from registros_entrada where fecha between '01/08/2024' and '31/08/2024'
-update registros_entrada set  cedula_empleado = '082345679'
-where fecha between '01/08/2024' and '31/08/2024'

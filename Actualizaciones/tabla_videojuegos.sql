@@ -45,7 +45,4 @@ select * from videojuegos where  nombre like 'C%'
 select * from videojuegos where valoracion between '9' and '10'
 --Seleccionar videojuegos con una descripcion null
 select * from videojuegos where descripcion is null
-------------------------RETO 4----------------------------------------------------------
-select * from videojuegos where  valoracion > 9
-update videojuegos set descripcion = 'Mejor puntado'
-where  valoracion > 9
+
