@@ -40,4 +40,9 @@ values (20153,'50219',208.3,'D','15/08/2004','12:12')
 --#10
 insert into transacciones(codigo,numero_cuenta,monto,tipo,fecha,hota)
 values (20154,'50220',209.3,'D','10/08/2004','20:12')
-
+insert into transacciones(codigo,numero_cuenta,monto,tipo,fecha,hota)
+values (20003,'50218',207.3,'C','06/08/2023','17:12')
+------------------------Reto 6----------------------------
+delete from transacciones
+where hota between '14:00' and '18:00' and fecha between '1/8/2023' and '30/8/2023'
+select * from transacciones
