@@ -38,21 +38,3 @@ values(12545,87544,'05/12/2003','800.20')
 --#10
 insert into cuentas(numero_cuenta,cedula_propetario,fecha_creacion,saldo)
 values(25015,20074,'21/12/2001','102.20')
---#11
-insert into cuentas(numero_cuenta,cedula_propetario,fecha_creacion,saldo)
-values(20321,12102,'10/01/2024','125.25')
-------------------------RETO 3----------------------
---#1 Crear un selct que traiga el numero de cuenta y el saldo de todas las cuentas
-select numero_cuenta,cedula_propetario, * from cuentas
---#2 Crear un select que traiga los registros entre el dia de hoy hasta 2 meses antes
-select * from cuentas where fecha_creacion between '10/01/2024' and '10/03/2024'
-select  numero_cuenta,saldo, * from cuentas  where  fecha_creacion between '1/1/2024' and '1/3/2024'
------------------------RETO 6-----------------------
-delete from cuentas 
-where cedula_propetario like '10%'
-
-select * from cuentas
-
-
-
-

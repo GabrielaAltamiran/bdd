@@ -32,18 +32,3 @@ values('1754830157','Dnna','Calle','calledanna35@gmail.com','21/01/1998')
 --#8
 insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
 values('1751794860','Gensis','Mendoza','genomendoza45@gmail.com','03/07/2004')
---#9
-insert into estudiantes(cedula,nombre,apellido,email,fecha_nacimiento)
-values('0351794865','Geno','Mendoza','genomendoza45@gmail.com','03/07/2004')
-----------------------------------RETO 3-----------------------------
---Crear un select que traiga el nombre y la cedula de los estudiantes
-select nombre,cedula, * from estudiantes
---Crear un select que traiga los nombres de todos los estudiantes cuya cedula empience con 17
-select nombre, * from estudiantes where cedula like '17%'
---Crear un select que traiga los nombres completos de todos los estudaintes cuyo nombre empiece con A
-select nombre, * from estudiantes where nombre like 'A%'
--------------------------------------Reto 6---------------------------
-delete from estudiantes
-where cedula = '%05'
-
-select * from estudiantes
