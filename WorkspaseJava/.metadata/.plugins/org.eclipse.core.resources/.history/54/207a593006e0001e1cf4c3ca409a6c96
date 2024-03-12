@@ -1,0 +1,17 @@
+package com.krkakedev;
+public class TextPersona {
+
+	public static void main(String[] args) {
+		// Esto es un comenatario 
+		//Crear una variable 
+		//int a;
+		//string b;
+		Persona p;//Paso 1 declaro una variable llamada "p" de tipo persona
+		p=new Persona();//Instanciando el objeto persona, refenrecnciado con p
+		System.out.println("nombre: "+p.nombre);//Para codificar arpido el codigo sysour + crlt+espacio
+		
+		
+		
+	}
+
+}
