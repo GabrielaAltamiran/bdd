@@ -10,7 +10,7 @@ create table estado_civil(
 	codigo char(1) not null,
 	descripcion varchar(20)not null,
 	--El primary key sirve para que una columna sea obligatoria
-	constraint estado_civil_ok primary key(codigo)
+	constraint estado_civil_pk primary key(codigo)
 )
 --*********************************************
 alter table personas 

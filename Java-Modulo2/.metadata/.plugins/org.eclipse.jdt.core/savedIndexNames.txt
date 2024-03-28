@@ -1,5 +1,0 @@
-INDEX VERSION 1.134+D:\Programacion.Gabriela A\Modulo2\bdd\Java-Modulo2\.metadata\.plugins\org.eclipse.jdt.core
-2490254323.index
-1865797976.index
-2735037560.index
-3413270776.index
