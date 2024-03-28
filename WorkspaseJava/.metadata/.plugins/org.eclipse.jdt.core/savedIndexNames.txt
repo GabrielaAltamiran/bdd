@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+D:\Programacion.Gabriela A\Modulo2\WorkspaseJava\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index
-3413270776.index
-589064800.index
