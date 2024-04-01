@@ -1,4 +1,4 @@
---Crear script 1 
+ --Crear script 1 
 create table productos(
 	codigo int not null,
 	nombre varchar(50)not null,
