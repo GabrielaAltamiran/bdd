@@ -91,6 +91,14 @@ insert into transacciones(codigo,numero_cuenta,monto,tipo,fecha,hora) values
 (4,'22004',555.5,'D','06/09/2023','19:25'),
 (5,'22005',999.9,'D','06/10/2020','12:32')
 ----------------------FIN RETO 23---------------------------------
-
+--********************Reto 24*************************************
+----------------------Consultar--------------------------------
+select * from 
+transacciones tran, banco ban
+where tipo = 'C' and numero_cuenta between '22001' and '22004'
+----------------------Subconsultar--------------------------------
+select tran.codigo,tran.numero_cuenta,tran.monto,tran.tipo,tran.fecha,tran.hora from 
+transacciones tran, banco ban
+where tran.codigo = ban.codigo_banco and codigo = '1'
 
 

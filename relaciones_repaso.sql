@@ -38,4 +38,5 @@ values('c','CASADO');
 --SOLTERO
 insert into estado_civil(codigo,descripcion)
 values('s','SOLTERO');
+---------------------------------
 

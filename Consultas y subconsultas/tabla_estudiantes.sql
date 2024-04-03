@@ -82,7 +82,8 @@ INSERT INTO Profesores (codigo, nombre) VALUES
 (3, 'Profesor Francisco'),
 (4, 'Profesora Pérez'),
 (5, 'Profesor González'),
-(6, 'Profesor Teran');
+(6, 'Profesor Teran'),
+(7,'Profeso Fabricio')
 
 --Insertar datos en la tabla Estudiantes
 insert into Estudiantes (cedula, nombre, apellido, email, fecha_nacimiento, codigo_profesor) values
@@ -91,5 +92,17 @@ insert into Estudiantes (cedula, nombre, apellido, email, fecha_nacimiento, codi
 ('3456789012', 'Carlos', 'Morales', 'carlos.morales@email.com', '2000-03-03', 3),
 ('4567890123', 'Ana', 'Guerrero', 'ana.guerrero@email.com', '2000-04-04', 4),
 ('5678901234', 'Pedro', 'Castillo', 'pedro.castillo@email.com','2000-05-05',5),
-('1755841002', 'Gaby', 'Altamirano', 'nietogabriela2@gmail.com', '2000-05-25',6)
-
+('1755841002', 'Gaby', 'Altamirano', 'nietogabriela2@gmail.com', '2000-05-25',6),
+('1755841012', 'Kevin', 'Teran', 'kevinTeran@gmail.com', '2000-05-28',7)
+--*************************finalizado reto 23*************************
+---------------------------Reto 24------------------------------------
+---------------------------Consulta-----------------------------------
+select pro.codigo, estu.nombre,estu.apellido from 
+estudiantes estu,profesores pro
+where apellido like '%n'
+---------------------------Subconsulta--------------------------------
+select estu.nombre,estu.apellido,estu.email,estu.fecha_nacimiento,estu.codigo_profesor from 
+estudiantes estu,profesores pro
+where estu.codigo_profesor = pro.codigo
+and pro.nombre = 'Profesor Francisco'
+--------------------------- Finalizado reto 24------------------------
