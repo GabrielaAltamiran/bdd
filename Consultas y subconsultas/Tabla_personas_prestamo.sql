@@ -58,7 +58,8 @@ select per.cantidad_ahorrada, pre.monto, pre.garante  from
 prestamos pre, persona per
 where pre.monto between '100' and '1000'
 -----------------Subconsultar-------------------
-select per.cedula,per.nombre,per.apellido,per.estatura,per.hora_nacimiento,per.cantidad_ahorrada,per.numero_hijos from 
+select per.cedula,per.nombre,per.apellido,
+per.estatura,per.hora_nacimiento,per.cantidad_ahorrada,per.numero_hijos from 
 prestamos pre, persona per
 where per.cedula = pre.cedula
 and per.cedula = '1755841002'

@@ -43,11 +43,12 @@ INSERT INTO ventas (id_venta, codigo_producto, fecha_venta, cantidad) VALUES
 ------------------------Consultar--------------
 select produ.nombre, produ.stock, ven.cantidad from 
 productos produ, ventas ven
-where produ.codigo = ven.codigo_producto and nombre like 'M%' or descripcion = null
+where produ.codigo = ven.codigo_producto and nombre like 'M%' 
+or descripcion = null
 -----------------------Subconsulta------------
 select produ.nombre, produ.stock from 
 productos produ, ventas ven
-where produ.codigo = ven.codigo_producto and codigo_producto = '5'
+where produ.codigo = ven.codigo_producto and cantidad = '5'
 
 
 

@@ -94,7 +94,7 @@ values(11,'0215478364','25/12/2007',2000)
 ------------------Consulta--------------------
  select cli.nombre,cli.apellido from 
  clientes cli, compras com
- where cli.cedula_cliente = com.cedula
+ where cli.cedula_cliente = com.cedula and cedula like '%7%'
 ------------------Subconsulta--------------------
  select com.cedula,cli.nombre,cli.apellido from 
  clientes cli, compras com
