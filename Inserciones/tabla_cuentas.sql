@@ -9,8 +9,13 @@ create table cuentas(
 )
 ---------------RETO 2---------------
 --#1
+
+select * from cuentas
+
 insert into cuentas(numero_cuenta,cedula_propetario,fecha_creacion,saldo)
-values(22015,20014,'20/12/2001','12.20')
+values('22015','20014','20/12/2001',12.20)
+
+delete from cuentas where numero_cuenta='22015'
 --#2
 insert into cuentas(numero_cuenta,cedula_propetario,fecha_creacion,saldo)
 values(49852,30154,'23/12/2000','1200.20')

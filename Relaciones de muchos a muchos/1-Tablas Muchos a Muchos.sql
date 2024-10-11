@@ -110,7 +110,7 @@ create table reservas (
 								 (10,15.0,1,1),
 								 (11,15.0,1,1),
 								 (12,15.0,1,1);
-								 
+
 
 insert into huespedes values    (1,'Ricardo','Montero',0980658774,'Ricmontero@gmail.com'),
 								(2,'Sofía','Martinez',09887563205,'Sofimar@gmail.com'),
@@ -122,7 +122,7 @@ insert into huespedes values    (1,'Ricardo','Montero',0980658774,'Ricmontero@gm
 								(8,'Belen','Orejuela',0996365748,'BOrejuela@gmail.com'),
 								(9,'Diana','Monroy',0987963214,'DianaMroy@gmail.com'),
 								(10,'Bryan','Moncada',0986325741,'BrMoncada@gmail.com');
-												
+			
 								
 insert into reservas values ('11/05/2023','12/05/2023',2,10),
 						    ('11/05/2023','12/05/2023',2,9),
@@ -213,6 +213,7 @@ insert into proyecto_municipio values (1,5),
 									  (3,6),
 									  (1,3),
 									  (2,7);
+delete from proyecto_municipio
 									  
 									  
 --*****************************CONSULTAS USUARIOS GRUPO*****************************---

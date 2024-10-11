@@ -10,8 +10,11 @@ create table personas (
 	numero_hijos int,
 	constraint personas_pk primary key (cedula)
 )
-insert into personas(cedula,nombre,apellido)
+insert into personas(cedula,nombre,apellido,numero_hijos,estatura,cantidad_ahorrada,fecha_nacimiento,hora_nacimiento)
 values ('1714616123','Santiago','Mosquera')
+
+delete from personas where cedula='1714616123'
+select * from personas 
 
 insert into personas(cedula,nombre,apellido,estatura)
 values ('1755841002','Gabriela','Altamirano',1.45)
