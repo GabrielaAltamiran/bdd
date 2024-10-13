@@ -8,22 +8,17 @@ create table personas (
 	hora_nacimiento time,
 	cantidad_ahorrada money,
 	numero_hijos int,
-	constraint personas_pk primary key (cedula)
+	codigo_estado_civil char(1) not null,
+	constraint personas_pk primary key (cedula),
+	constraint codigo_estado_civil_fk foreign key (codigo_estado_civil) references estado_civil(codigo)
 )
-insert into personas(cedula,nombre,apellido,numero_hijos,estatura,cantidad_ahorrada,fecha_nacimiento,hora_nacimiento)
+insert into personas(cedula,nombre,apellido,numero_hijos,estatura,cantidad_ahorrada,fecha_nacimiento,hora_nacimiento,codigo_estado_civil)
 values ('1714616123','Santiago','Mosquera')
-
-delete from personas where cedula='1714616123'
-select * from personas 
-
-insert into personas(cedula,nombre,apellido,estatura)
-values ('1755841002','Gabriela','Altamirano',1.45)
-
-insert into personas(cedula,nombre,apellido,numero_hijos)
-values ('1714616115','Santi','Davila',2)
-
-insert into personas(cedula,nombre,apellido,numero_hijos,estatura,fecha_nacimiento,hora_nacimiento,cantidad_ahorrada)
-values ('1714612016','Jose','Anzules',1,1.45,'28/05/2006','22:12',1000.25)
-
-select cedula,nombre,numero_hijos,estatura from personas
+----------------------------------------------------
+delete from personas where cedula='1231540912'
+select * from estado_civil 
 select * from personas
+drop table personas
+----------------------------------------------------
+
+

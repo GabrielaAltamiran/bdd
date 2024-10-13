@@ -25,7 +25,7 @@ add constraint clientes_compras_fk
 foreign key (cedula)
 references clientes(cedula_cliente)
 --******************Inset---------------------
-insert
+insert 
 
 
 

@@ -9,6 +9,7 @@ create table transacciones (
 	constraint transacciones_pk primary key(codigo)
 	
 )
+select * from transacciones
 -----------------RETO 2---------------------------
 --#1
 insert into transacciones(codigo,numero_cuenta,monto,tipo,fecha,hota)

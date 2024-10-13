@@ -11,9 +11,11 @@ create table transacciones (
 	constraint transacciones_pk primary key(codigo)
 	
 )
+select * from transacciones
+delete from transacciones where codigo = '29'
 -----------------RETO 2---------------------------
 --#1
-insert into transacciones(codigo,numero_cuenta,monto,tipo,fecha,hota)
+insert into transacciones(codigo,numero_cuenta,monto,tipo,fecha,hora)
 values (20145,'50213',200.3,'C','25/08/2004','00:12')
 --#2
 insert into transacciones(codigo,numero_cuenta,monto,tipo,fecha,hota)
