@@ -13,12 +13,20 @@ create table personas (
 	constraint codigo_estado_civil_fk foreign key (codigo_estado_civil) references estado_civil(codigo)
 )
 insert into personas(cedula,nombre,apellido,numero_hijos,estatura,cantidad_ahorrada,fecha_nacimiento,hora_nacimiento,codigo_estado_civil)
-values ('1714616123','Santiago','Mosquera')
+values ('1714616123','Santiago','Mosquera',2,1.67,3244.7,'21/09/2024','12:32','C')
 ----------------------------------------------------
-delete from personas where cedula='1231540912'
+delete from personas where cedula='1755841002'
 select * from estado_civil 
 select * from personas
 drop table personas
 ----------------------------------------------------
 
+insert into personas(cedula, nombre, apellido, codigo_estado_civil)
+values ('1755841002','Gabriela','Altamirano','C');
+insert into personas(cedula, nombre, apellido, codigo_estado_civil)
+values ('023548716','Luis','Mora','S');
+insert into personas(cedula, nombre, apellido, codigo_estado_civil)
+values ('074659846','Martin','Torres','U');
+insert into personas(cedula, nombre, apellido, codigo_estado_civil)
+values ('036547978','Carla','Pico','S');
 
